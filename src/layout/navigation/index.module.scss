@@ -1,0 +1,35 @@
+@import '../../mixins';
+
+.navWrapper {
+  @include flexRow;
+  width: 100%;
+  margin: 15px 0;
+
+  @include breakpoint(md) {
+    width: 50%;
+  }
+}
+
+.navItem {
+  text-align: center;
+  text-decoration: none;
+  flex: 1;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 16px;
+
+  &:not(:first-child) {
+    @include vrBefore {
+      transform: rotate(10deg);
+    }
+  }
+
+  @include breakpoint(sm) {
+    font-size: 20px;
+  }
+
+  @include breakpoint(md) {
+    font-size: 24px;
+  }
+}
+

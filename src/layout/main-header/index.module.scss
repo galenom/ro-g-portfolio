@@ -1,0 +1,25 @@
+@import '../../mixins';
+
+.header {
+  @include flexCol;
+  @include alignCenter;
+  transition: all 150ms;
+  padding: 10px 0;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, .25);
+
+  @include breakpoint(sm) {
+    @include flexRow;
+    @include alignCenter;
+    @include justifySpaceBetween;
+    padding: 20px;
+  }
+
+  @include breakpoint(md) {
+    padding: 40px 20px;
+  }
+
+  @include breakpoint(lg) {
+    padding: 60px;
+  }
+
+}
