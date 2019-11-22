@@ -1,4 +1,4 @@
-@import '../../mixins';
+@import '../../../mixins';
 .logoWrapper {
   @include flexRow;
   @include justifyCenter; 
@@ -23,6 +23,6 @@
 
   @include breakpoint(sm) {
     margin-left: 20px;
-    font-size: 32px;
+    font-size: 24px;
   }
 }

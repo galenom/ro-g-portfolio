@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react';
-import logo from '../../assets/squeegee-logo.png'
+import logo from '../../../assets/squeegee-logo.png'
 import styles from './index.module.scss';
 export const Logo = (): ReactElement => {
   return (
