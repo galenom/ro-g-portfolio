@@ -13,13 +13,4 @@
     @include justifySpaceBetween;
     padding: 20px;
   }
-
-  @include breakpoint(md) {
-    padding: 40px 20px;
-  }
-
-  @include breakpoint(lg) {
-    padding: 60px;
-  }
-
 }
