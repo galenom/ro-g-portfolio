@@ -12,14 +12,14 @@ export const NavBar = (): ReactElement => {
                 activeClassName={styles.activeNavItem}
                 isActive={isActive}
             >
-                Work
+                About
             </NavLink>
             <NavLink
-                to='/about'
+                to='/work'
                 className={styles.navItem}
                 activeClassName={styles.activeNavItem}
             >
-                About
+                Work
             </NavLink>
             <NavLink
                 to='/contact'
@@ -33,7 +33,7 @@ export const NavBar = (): ReactElement => {
     )
 }
 
-const isActive = (match: match, location: Location<any>): boolean => {
+const isActive = (_: match, location: Location<any>): boolean => {
     if (!location) return false;
     const { pathname } = location;
     return pathname === '/';

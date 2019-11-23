@@ -1,0 +1,15 @@
+@import '../../../mixins';
+
+.main {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+
+    .content {
+        width: 100%;
+        margin: 0 auto;
+        @include breakpoint(md) {
+            max-width: 800px;
+        }
+    }
+}
