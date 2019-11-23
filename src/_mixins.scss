@@ -16,12 +16,16 @@
   justify-content: center;
 }
 
-@mixin alignCenter {
-  align-items: center;
-}
-
 @mixin justifySpaceBetween {
   justify-content: space-between;
+}
+
+@mixin alignStart {
+  align-items: flex-start;
+}
+
+@mixin alignCenter {
+  align-items: center;
 }
 
 @mixin vrBefore {

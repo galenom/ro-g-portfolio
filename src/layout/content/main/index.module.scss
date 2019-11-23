@@ -6,6 +6,8 @@
     padding: 10px;
 
     .content {
+        @include flexCol;
+        @include alignCenter;
         width: 100%;
         margin: 0 auto;
         @include breakpoint(md) {
