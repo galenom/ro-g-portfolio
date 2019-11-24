@@ -41,6 +41,32 @@
   }
 }
 
+@mixin hrBefore {
+  &::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.15);
+    @content;
+  }
+}
+
+@mixin clearBefore {
+  &::before {
+    content: none;
+    position: unset;
+    width: unset;
+    height: unset;
+    top: unset;
+    bottom: unset;
+    left: unset;
+    background-color: unset;
+  }
+}
+
 @mixin breakpoint($min: 0, $max: 0) {
   $type: type-of($min);
   

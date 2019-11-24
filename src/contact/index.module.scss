@@ -1,0 +1,117 @@
+@import '../variables';
+@import '../mixins';
+
+.contactDetails {
+    @include flexCol;
+    @include alignCenter;
+
+    & > p {
+        position: relative;
+        margin: 10px 0;
+
+        &:first-child {
+            margin-top: 25px;
+        }
+
+        &:not(:first-child) {
+            @include hrBefore {
+                width: 50px;
+                margin: 0 auto;
+                top: -10px;
+            };
+        }
+    }
+
+    @include breakpoint(sm) {
+        @include flexRow;
+
+        & > p {
+            margin: 10px 0;
+
+            &:first-child {
+                margin-top: 10px;
+            }
+
+            &:not(:first-child) {
+                margin-left: 30px;
+                @include clearBefore;
+                @include vrBefore {
+                    margin: initial;
+                    left: -15px;
+                };
+            }
+        }
+    }
+}
+
+.form {
+    @include flexCol;
+    @include alignCenter;
+    width: 100%;
+
+    @include breakpoint(sm) {
+        width: 600px;
+    }
+
+    .fields {
+        @include flexCol;
+        width: 100%;
+
+        @include breakpoint(sm) {
+            @include flexRow;
+        }
+
+        .formSection {
+            @include flexCol;
+
+            @include breakpoint(sm) {
+                flex: 1;
+                &:first-child {
+                    @include justifySpaceBetween;
+                }
+            }
+
+            input, textarea {
+                font-size: 18px;
+                border: 1px solid $secondary-text-black;
+                border-radius: 7.5px;
+                margin-top: 10px;
+
+                &::placeholder {
+                    color: $secondary-text-black;
+                }
+            }
+
+            input {
+                padding: 0 10px;
+                height: 40px;
+            }
+
+            textarea {
+                padding: 10px;
+                height: 150px;
+
+                @include breakpoint(sm) {
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+
+    .button {
+        margin-top: 20px;
+        height: 40px;
+        border: 1px solid $primary-text-black;
+        border-radius: 7.5px;
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+        @include breakpoint(sm) {
+            width: 200px;
+        }
+
+        transition: all 150ms;
+
+        &:active {
+            transform: translateY(2px);
+        }
+    }
+}
