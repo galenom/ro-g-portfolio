@@ -2,6 +2,10 @@ import React, { useEffect } from 'react';
 import { Main } from '../layout/content/main';
 import { Nav } from './nav';
 import { Switch, useRouteMatch, Route } from 'react-router';
+import { Loteria } from './loteria';
+import { Installations } from './installations';
+import { Other } from './other';
+import { Studies } from './studies';
 
 export const Work = () => {
     useEffect(() => {
@@ -16,16 +20,16 @@ export const Work = () => {
                 <Nav />
                 <Switch>
                     <Route path={path} exact>
-                        <h1>loteria</h1>
+                        <Loteria />
                     </Route>
                     <Route path={`${path}/installations`}>
-                        <h1>installations</h1>
+                        <Installations />
                     </Route>
                     <Route path={`${path}/other`}>
-                        <h1>other</h1>
+                        <Other />
                     </Route>
                     <Route path={`${path}/studies`}>
-                        <h1>studies</h1>
+                        <Studies />
                     </Route>
                 </Switch>
             </>
