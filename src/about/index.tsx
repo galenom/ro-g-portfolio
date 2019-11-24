@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Main } from '../layout/content/main';
 import profilePhoto from '../assets/Grajeda_Aurora_Photo.jpg';
 import styles from './index.module.scss';
 
 export const About = () => {
+    useEffect(() => {
+        document.title = 'About - Aurora Grajeda';
+    }, []);
+
     return (
         <Main>
             <>

@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Main } from '../layout/content/main';
 import styles from './index.module.scss';
 
 export const Contact = () => {
+    useEffect(() => {
+        document.title = 'Contact - Aurora Grajeda';
+    }, []);
+
     return (
         <Main>
             <>
