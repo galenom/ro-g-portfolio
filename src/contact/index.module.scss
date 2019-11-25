@@ -101,9 +101,11 @@
     .button {
         margin-top: 20px;
         height: 40px;
+        width: 100%;
         border: 1px solid $primary-text-black;
         border-radius: 7.5px;
         box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+        
         @include breakpoint(sm) {
             width: 200px;
         }
