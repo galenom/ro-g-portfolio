@@ -17,7 +17,7 @@ export const Contact = () => {
                 </div>
                 {/* 
                 // @ts-ignore */}
-                <form name="contactForm" netlify netlify-honeypot="bot-field" className={styles.form}>
+                <form name="contactForm" netlify netlify-honeypot="bot-field" className={styles.form} method='post'>
                     <input type="hidden" name="form-name" value="contactForm" />
                     <div className={styles.fields}>
                         <section className={styles.formSection}>
