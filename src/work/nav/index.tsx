@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink, useLocation, useRouteMatch, match } from 'react-router-dom';
+import { NavLink, useRouteMatch, match } from 'react-router-dom';
 import styles from './index.module.scss';
 import { Location } from 'history';
 

@@ -7,6 +7,6 @@ interface ThumbnailProps {
 }
 export const Thumbnail = ({ src, onClick }: ThumbnailProps) => {
     return (
-        <a href="#" className={styles.thumbnail} onClick={onClick}><img src={src} /></a>
+        <button className={styles.thumbnail} onClick={onClick}><img src={src} alt={src} /></button>
     )
 }

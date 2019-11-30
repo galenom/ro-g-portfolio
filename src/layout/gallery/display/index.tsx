@@ -9,7 +9,7 @@ export const Display = ({ src, onDismiss }: DisplayProps) => {
     const hide = !src ? styles.hide : undefined;
     return (
         <aside className={`${styles.modal} ${hide}`} onClick={onDismiss}>
-            {src && <img src={src} /> }
+            {src && <img src={src} alt={src} /> }
         </aside>
     )
 }
