@@ -2,12 +2,13 @@
 
 .thumbnail {
     flex: 1;
-    min-width: calc(50% - 10px);
-    // max-width: 150px;
-    height: 200px;
+    min-width: 50%;
+    max-width: 50%;
+    overflow: hidden;
+    height: 150px;
     
 
-    margin: 0 5px;
+    padding: 10px 5px 0;
 
     @include breakpoint(sm) {
         margin: 0 20px;
@@ -17,6 +18,6 @@
     img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: contain;
     }
 }
