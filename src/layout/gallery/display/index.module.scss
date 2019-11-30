@@ -4,7 +4,7 @@
     @include flexRow;
     @include justifyCenter;
     @include alignCenter;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
@@ -19,6 +19,8 @@
     }
 
     img {
-        height: calc(100% - 50px);
+        height: 80%;
+        width: 80%;
+        object-fit: contain;
     }
 }

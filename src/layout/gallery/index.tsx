@@ -18,7 +18,7 @@ export const Gallery = ({ images }: GalleryProps) => {
             <section className={styles.gallery}>
                 {
                     images.map((img) => {
-                        return <Thumbnail src={img.thumbnail} onClick={() => setSelectedImage(img.display)} />
+                        return <Thumbnail src={img.thumbnail} onClick={() => setSelectedImage(img.display)} key={img.display}/>
                     })
                 }
                 {

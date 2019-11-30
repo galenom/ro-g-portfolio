@@ -4,7 +4,6 @@ import {
   Switch,
   Route,
 } from 'react-router-dom'
-import './App.css';
 import { MainHeader } from './layout/main-header';
 import { Work } from './work';
 import { About } from './about';

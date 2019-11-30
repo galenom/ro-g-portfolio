@@ -2,17 +2,24 @@
 
 .thumbnail {
     flex: 1;
-    min-width: 50%;
-    max-width: 50%;
+    min-width: calc(50% - 10px);
+    max-width: calc(50% - 10px);
     overflow: hidden;
     height: 150px;
-    
+    margin: 10px 5px 0;
+    border: none;
+    cursor: pointer;
+    transition: all .2s;
+    background-color: transparent;
 
-    padding: 10px 5px 0;
+    &:hover {
+        transform: scale(1.1);
+    }
 
     @include breakpoint(sm) {
-        margin: 0 20px;
-        min-width: calc(25% - 80px);;
+        margin: 20px 20px 0;
+        min-width: calc(25% - 40px);
+        max-width: calc(25% - 40px);
     }
 
     img {
