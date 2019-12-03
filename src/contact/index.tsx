@@ -12,7 +12,7 @@ export const Contact = () => {
             <>
                 <div className={styles.contactDetails}>
                     <p>Aurora 'Ro' Grajeda</p>
-                    <p>ro@auroragrajeda.com</p>
+                    <p><a href="mailto:ro@auroragrajeda.com">ro@auroragrajeda.com</a></p>
                     <p>Chicago, IL</p>
                 </div>
                 {/* 
