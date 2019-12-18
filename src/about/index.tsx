@@ -21,6 +21,9 @@ export const About = () => {
                     My work focuses on cultural images as a first generation Mexican American young woman and the connections and disconnections between the lifestyle of my immigrant parents and the one I have built for myself. My cultural roots and traditions inspire me.
                     Please contact me with any questions, inquiries, or suggestions!
                 </p>
+                <p className={styles.downloadLink}>
+                    <a href='/files/AGrajeda_CV.pdf' target='_blank' rel='noreferrer nofollow'>Preview CV</a>
+                </p>
             </>
         </Main>
     )

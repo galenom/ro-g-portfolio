@@ -1,4 +1,15 @@
+@import '../mixins';
+@import '../variables';
+
 .profilePhoto {
     margin-top: 25px;
     width: 200px;
+}
+
+.downloadLink {
+    width: 100%;
+    text-align: right;
+    a {
+        @include linkUnderline;
+    }
 }

@@ -3,32 +3,14 @@
 
 .navWrapper {
     @include flexRow;
-    // position: relative;
     width: 100%;
     margin: 15px 0;
-
-    @include breakpoint (sm) {
-        // width: 50%;
-    }
 }
 
 .navItem {
-    font-size: 18px;
-    color: $primary-text-black;
-    background:
-        linear-gradient(
-            rgba(0,0,0, 0.1) 0%,
-            rgba(0,0,0, 0.15) 100%
-        );
-    background-position: 0 100%;
-    background-repeat: repeat-x;
-    background-size: 4px 4px;
-    color: #000;
-    text-decoration: none;
-    transition: background-size 1s;
+    @include linkUnderline;
 
     &:hover {
-        background-size: 4px 50px;
         & ~ .activeNavItem {
             background-size: 4px 4px;
         }
